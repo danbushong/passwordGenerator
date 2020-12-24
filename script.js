@@ -2,26 +2,61 @@
 var generateBtn = document.querySelector("#generate");
 
 
-var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-
-var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-
-var numberString = ["0","1","2","3","4","5","6","7","8","9"];
-
-var specialCharacter = ["!","@","#","$","%","^","&","*","(",")","_","=","+"];
-
 
 // Write password to the #password input
 
 
 function promptMe(){
+  //first prompt
+  userCharacterCountChoice = prompt("How many characters?");
 
-  var userCharacterCountChoice = prompt("How many characters?")
+    if (userCharacterCountChoice > 8 && userCharacterCountChoice < 128){
+      console.log("valid password")
+    }
+    else{
+      console.log("invalid password")
+    }
 
-  console.log(userCharacterCountChoice)
+  //all the variables I could think of
+
+  // lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+  // upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+  // numberString = ["0","1","2","3","4","5","6","7","8","9"];
+
+  // specialCharacter = ["!","@","#","$","%","^","&","*","(",")","_","=","+"];
+
+  // allPossible = (lowerCase + upperCase + numberString + specialCharacter);
+
+  // noUpperCase = (allPossible - upperCase);
+
+  // noNumbers = (allPossible - numberString);
+
+  // noSpecial = (allPossible - specialCharacter);
+
+  // lettersOnly = (lowerCase + UpperCase);
+
+  // numbersAndSpecialCharOnly = (numberString + specialCharacter);
+
+  // numbersAndLowerCase = (lowerCase + numberString);
+
+  // numbersAndUpperCase = (numberString + upperCase);
+
+  // specialCharacterAndLowerCase = (specialCharacter + lowerCase);
+
+  // specialCharacterAndUpperCase = (specialCharacter + upperCase);
+
   
+
   
 }
+
+
+
+
+
+
 
   
   
