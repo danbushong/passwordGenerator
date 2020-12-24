@@ -11,7 +11,22 @@ function promptMe(){
   userCharacterCountChoice = prompt("How many characters?");
 
     if (userCharacterCountChoice > 8 && userCharacterCountChoice < 128){
-      console.log("valid password")
+      alert("valid password length")
+
+      //asking is lower case letters should be used
+      lowerCaseLetterChoice = confirm("Do you want lowercase letters?");
+
+        if (lowerCaseLetterChoice === true){
+          alert("Cool we will use them");
+        }
+        else {
+          alert("Ok we will not use those");
+        }
+      
+      
+
+
+
     }
     else{
       console.log("invalid password")
