@@ -7,6 +7,8 @@ var generateBtn = document.querySelector("#generate");
 
 
 function promptMe(){
+
+
   //first prompt
   userCharacterCountChoice = prompt("How many characters?");
 
@@ -58,35 +60,39 @@ function promptMe(){
       alert("invalid password, make it between 8 and 128 characters")
     }
 
+  
+
+  
+
   //all the variables I could think of
 
-  // lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+  lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
-  // upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+  upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-  // numberString = ["0","1","2","3","4","5","6","7","8","9"];
+  numberString = ["0","1","2","3","4","5","6","7","8","9"];
 
-  // specialCharacter = ["!","@","#","$","%","^","&","*","(",")","_","=","+"];
+  specialCharacter = ["!","@","#","$","%","^","&","*","(",")","_","=","+"];
 
-  // allPossible = (lowerCase + upperCase + numberString + specialCharacter);
+  allPossible = lowerCase.concat(upperCase , numberString , specialCharacter);
 
-  // noUpperCase = (allPossible - upperCase);
+  noUpperCase = numberString.concat(lowerCase , specialCharacter);
 
-  // noNumbers = (allPossible - numberString);
+  noNumbers = specialCharacter.concat(upperCase, lowerCase);
 
-  // noSpecial = (allPossible - specialCharacter);
+  noSpecial = lowerCase.concat(upperCase, numberString);
 
-  // lettersOnly = (lowerCase + UpperCase);
+  lettersOnly = lowerCase.concat(UpperCase);
 
-  // numbersAndSpecialCharOnly = (numberString + specialCharacter);
+  numbersAndSpecialCharOnly = numberString.concat(specialCharacter);
 
-  // numbersAndLowerCase = (lowerCase + numberString);
+  numbersAndLowerCase = lowerCase.concat(numberString);
 
-  // numbersAndUpperCase = (numberString + upperCase);
+  numbersAndUpperCase = numberString.concat(upperCase);
 
-  // specialCharacterAndLowerCase = (specialCharacter + lowerCase);
+  specialCharacterAndLowerCase = specialCharacter.concat(lowerCase);
 
-  // specialCharacterAndUpperCase = (specialCharacter + upperCase);
+  specialCharacterAndUpperCase = specialCharacter.concat(upperCase);
 
   
 
