@@ -31,17 +31,45 @@ specialCharacterAndUpperCase = specialCharacter.concat(upperCase);
 
 //random number in variables
 randomNumberInAllPossible = Math.floor(Math.random()*allPossible.length);
+
+
 randomNumberInNoUpperCase = Math.floor(Math.random()*noUpperCase.length);
+
+
 randomNumberInNoNumbers = Math.floor(Math.random()*noNumbers.length);
+
+
 randomNumberInNoSpecial = Math.floor(Math.random()*noSpecial.length);
+
+
 randomNumberInLettersOnly = Math.floor(Math.random()*lettersOnly.length);
-randomNumberInNSCO = Math.floor(Math.random()*numbersAndSpecialCharOnly.length);
+
+
+randomNumberInNumbersAndSpecialCharOnly = Math.floor(Math.random()*numbersAndSpecialCharOnly.length);
+
+
 randomNumberNumbersAndLowerCase = Math.floor(Math.random()*numbersAndLowerCase.length);
+
+
 randomNumberNumbersAndUpperCase = Math.floor(Math.random()*numbersAndUpperCase.length);
+
+
 randomNumberspecialCharacterAndLowerCase = Math.floor(Math.random()*specialCharacterAndLowerCase.length);
+
+
 randomNumberspecialCharacterAndUpperCase = Math.floor(Math.random()*specialCharacterAndUpperCase.length);
 
-console.log(randomNumberspecialCharacterAndUpperCase);
+
+randomNumberUpperCase = Math.floor(Math.random()*upperCase.length);
+
+
+randomNumberNumberString = Math.floor(Math.random()*numberString.length);
+
+
+randomNumberLowerCase = Math.floor(Math.random()*lowerCase.length);
+
+
+randomNumberSpecialCharacter = Math.floor(Math.random()*specialCharacter.length);
 
 
 
