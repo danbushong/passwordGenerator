@@ -32,67 +32,61 @@ specialCharacterAndLowerCase = specialCharacter.concat(lowerCase);
 specialCharacterAndUpperCase = specialCharacter.concat(upperCase);
 
 //random number in variables with the random element below
-randomNumberInAllPossible = Math.floor(Math.random()*allPossible.length);
+randomNumberInAllPossible = Math.floor(Math.random()*allPossible.length) + 1;
 
 var a = allPossible[randomNumberInAllPossible];
 
-
-randomNumberInNoUpperCase = Math.floor(Math.random()*noUpperCase.length);
+randomNumberInNoUpperCase = Math.floor(Math.random()*noUpperCase.length)+ 1;
 
 var b = noUpperCase[randomNumberInNoUpperCase]
 
-randomNumberInNoNumbers = Math.floor(Math.random()*noNumbers.length);
+randomNumberInNoNumbers = Math.floor(Math.random()*noNumbers.length)+ 1;
 
 var c = noNumbers[randomNumberInNoNumbers];
 
-randomNumberInNoSpecial = Math.floor(Math.random()*noSpecial.length);
+randomNumberInNoSpecial = Math.floor(Math.random()*noSpecial.length)+ 1;
 
 var d = noSpecial[randomNumberInNoSpecial];
 
-randomNumberInLettersOnly = Math.floor(Math.random()*lettersOnly.length);
+randomNumberInLettersOnly = Math.floor(Math.random()*lettersOnly.length)+ 1;
 
 var e = lettersOnly[randomNumberInLettersOnly]
 
+randomNumberInNumbersAndSpecialCharOnly = Math.floor(Math.random()*numbersAndSpecialCharOnly.length)+ 1;
 
-randomNumberInNumbersAndSpecialCharOnly = Math.floor(Math.random()*numbersAndSpecialCharOnly.length);
+var f = numbersAndSpecialCharOnly[randomNumberInNumbersAndSpecialCharOnly]+ 1;
 
-var f = numbersAndSpecialCharOnly[randomNumberInNumbersAndSpecialCharOnly];
+randomNumberNumbersAndLowerCase = Math.floor(Math.random()*numbersAndLowerCase.length)+ 1;
 
-randomNumberNumbersAndLowerCase = Math.floor(Math.random()*numbersAndLowerCase.length);
+var g = numbersAndLowerCase[randomNumberNumbersAndLowerCase]+ 1;
 
-var g = numbersAndLowerCase[randomNumberNumbersAndLowerCase];
-
-randomNumberNumbersAndUpperCase = Math.floor(Math.random()*numbersAndUpperCase.length);
+randomNumberNumbersAndUpperCase = Math.floor(Math.random()*numbersAndUpperCase.length)+ 1;
 
 var h = numbersAndUpperCase[randomNumberNumbersAndUpperCase];
 
-randomNumberspecialCharacterAndLowerCase = Math.floor(Math.random()*specialCharacterAndLowerCase.length);
+randomNumberspecialCharacterAndLowerCase = Math.floor(Math.random()*specialCharacterAndLowerCase.length)+ 1;
 
 var i = specialCharacterAndLowerCase[randomNumberspecialCharacterAndLowerCase]
 
-
-randomNumberspecialCharacterAndUpperCase = Math.floor(Math.random()*specialCharacterAndUpperCase.length);
+randomNumberspecialCharacterAndUpperCase = Math.floor(Math.random()*specialCharacterAndUpperCase.length)+ 1;
 
 var j = specialCharacterAndUpperCase[randomNumberspecialCharacterAndUpperCase];
 
-randomNumberUpperCase = Math.floor(Math.random()*upperCase.length);
+randomNumberUpperCase = Math.floor(Math.random()*upperCase.length)+ 1;
 
 var k = upperCase.length[randomNumberUpperCase];
 
-
-randomNumberNumberString = Math.floor(Math.random()*numberString.length);
+randomNumberNumberString = Math.floor(Math.random()*numberString.length)+ 1;
 
 var l = numberString.length[randomNumberNumberString];
 
-randomNumberLowerCase = Math.floor(Math.random()*lowerCase.length);
+randomNumberLowerCase = Math.floor(Math.random()*lowerCase.length)+ 1;
 
 var m = lowerCase[randomNumberLowerCase];
 
-
-randomNumberSpecialCharacter = Math.floor(Math.random()*specialCharacter.length);
+randomNumberSpecialCharacter = Math.floor(Math.random()*specialCharacter.length)+ 1;
 
 var n = specialCharacter[randomNumberSpecialCharacter];
-
 
 
 
@@ -144,13 +138,29 @@ function promptMe(){
          alert("smart, they just make things complicated");
        }
 
+       
+        for (var z = 0 ; z < userCharacterCountChoice;z++) {
+          randomNumberInAllPossible = Math.floor(Math.random()*allPossible.length) + 1;
+
+          var a = allPossible[randomNumberInAllPossible];
+          
+          console.log(a);
+
+        }
+       
+         
+
       }
 
+      
 
      }
     else {
       alert("invalid password, make it between 8 and 128 characters");
+   
     }
+
+    
   }
   
   
