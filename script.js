@@ -1,6 +1,8 @@
 // Assignment Code
 generateBtn = document.querySelector("#generate");
 
+
+//variables for letter/number/symbol/case
 lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
 upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -29,51 +31,69 @@ specialCharacterAndLowerCase = specialCharacter.concat(lowerCase);
 
 specialCharacterAndUpperCase = specialCharacter.concat(upperCase);
 
-//random number in variables
+//random number in variables with the random element below
 randomNumberInAllPossible = Math.floor(Math.random()*allPossible.length);
+
+var a = allPossible[randomNumberInAllPossible];
 
 
 randomNumberInNoUpperCase = Math.floor(Math.random()*noUpperCase.length);
 
+var b = noUpperCase[randomNumberInNoUpperCase]
 
 randomNumberInNoNumbers = Math.floor(Math.random()*noNumbers.length);
 
+var c = noNumbers[randomNumberInNoNumbers];
 
 randomNumberInNoSpecial = Math.floor(Math.random()*noSpecial.length);
 
+var d = noSpecial[randomNumberInNoSpecial];
 
 randomNumberInLettersOnly = Math.floor(Math.random()*lettersOnly.length);
+
+var e = lettersOnly[randomNumberInLettersOnly]
 
 
 randomNumberInNumbersAndSpecialCharOnly = Math.floor(Math.random()*numbersAndSpecialCharOnly.length);
 
+var f = numbersAndSpecialCharOnly[randomNumberInNumbersAndSpecialCharOnly];
 
 randomNumberNumbersAndLowerCase = Math.floor(Math.random()*numbersAndLowerCase.length);
 
+var g = numbersAndLowerCase[randomNumberNumbersAndLowerCase];
 
 randomNumberNumbersAndUpperCase = Math.floor(Math.random()*numbersAndUpperCase.length);
 
+var h = numbersAndUpperCase[randomNumberNumbersAndUpperCase];
 
 randomNumberspecialCharacterAndLowerCase = Math.floor(Math.random()*specialCharacterAndLowerCase.length);
+
+var i = specialCharacterAndLowerCase[randomNumberspecialCharacterAndLowerCase]
 
 
 randomNumberspecialCharacterAndUpperCase = Math.floor(Math.random()*specialCharacterAndUpperCase.length);
 
+var j = specialCharacterAndUpperCase[randomNumberspecialCharacterAndUpperCase];
 
 randomNumberUpperCase = Math.floor(Math.random()*upperCase.length);
+
+var k = upperCase.length[randomNumberUpperCase];
 
 
 randomNumberNumberString = Math.floor(Math.random()*numberString.length);
 
+var l = numberString.length[randomNumberNumberString];
 
 randomNumberLowerCase = Math.floor(Math.random()*lowerCase.length);
+
+var m = lowerCase[randomNumberLowerCase];
 
 
 randomNumberSpecialCharacter = Math.floor(Math.random()*specialCharacter.length);
 
+var n = specialCharacter[randomNumberSpecialCharacter];
 
 
-// Write password to the #password input
 
 
 function promptMe(){
