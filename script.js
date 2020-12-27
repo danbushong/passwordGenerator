@@ -137,8 +137,8 @@ function promptMe(){
        else {
          alert("smart, they just make things complicated");
        }
-
-       
+       //if the user chooses everything
+       if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
         for (var z = 0 ; z < userCharacterCountChoice;z++) {
           randomNumberInAllPossible = Math.floor(Math.random()*allPossible.length) + 1;
 
@@ -147,6 +147,137 @@ function promptMe(){
           console.log(a);
 
         }
+
+        if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberInNoUpperCase = Math.floor(Math.random()*noUpperCase.length)+ 1;
+
+            var b = noUpperCase[randomNumberInNoUpperCase]
+
+            console.log(b);
+          }
+
+        }
+
+        if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberInNoNumbers = Math.floor(Math.random()*noNumbers.length)+ 1;
+
+            var c = noNumbers[randomNumberInNoNumbers];
+
+            console.log(c);
+          }
+
+        }
+
+        if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberInNoSpecial = Math.floor(Math.random()*noSpecial.length)+ 1;
+
+            var d = noSpecial[randomNumberInNoSpecial];
+
+          }
+        }
+
+        if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberInLettersOnly = Math.floor(Math.random()*lettersOnly.length)+ 1;
+
+            var e = lettersOnly[randomNumberInLettersOnly]
+
+          }
+        }
+
+        if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberInNumbersAndSpecialCharOnly = Math.floor(Math.random()*numbersAndSpecialCharOnly.length)+ 1;
+
+            var f = numbersAndSpecialCharOnly[randomNumberInNumbersAndSpecialCharOnly]+ 1;
+
+          }
+        }
+
+        if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberNumbersAndLowerCase = Math.floor(Math.random()*numbersAndLowerCase.length)+ 1;
+
+            var g = numbersAndLowerCase[randomNumberNumbersAndLowerCase]+ 1;
+
+          }
+        }
+
+        if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberNumbersAndUpperCase = Math.floor(Math.random()*numbersAndUpperCase.length)+ 1;
+
+            var h = numbersAndUpperCase[randomNumberNumbersAndUpperCase];
+
+          }
+        }
+
+        if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberspecialCharacterAndLowerCase = Math.floor(Math.random()*specialCharacterAndLowerCase.length)+ 1;
+
+            var i = specialCharacterAndLowerCase[randomNumberspecialCharacterAndLowerCase]
+
+          }
+        }
+
+        if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberspecialCharacterAndUpperCase = Math.floor(Math.random()*specialCharacterAndUpperCase.length)+ 1;
+
+            var j = specialCharacterAndUpperCase[randomNumberspecialCharacterAndUpperCase];
+
+          }
+        }
+
+        if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberUpperCase = Math.floor(Math.random()*upperCase.length)+ 1;
+
+            var k = upperCase.length[randomNumberUpperCase];
+
+          }
+        }
+
+        if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberNumberString = Math.floor(Math.random()*numberString.length)+ 1;
+
+            var l = numberString.length[randomNumberNumberString];
+
+          }
+        }
+
+        if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberLowerCase = Math.floor(Math.random()*lowerCase.length)+ 1;
+
+            var m = lowerCase[randomNumberLowerCase];
+
+          }
+        }
+
+        if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
+          for (var z = 0 ; z < userCharacterCountChoice;z++){
+            randomNumberSpecialCharacter = Math.floor(Math.random()*specialCharacter.length)+ 1;
+
+            var n = specialCharacter[randomNumberSpecialCharacter];
+
+
+          }
+        }
+
+
+       
+
+
+
+
+       }
+        
        
          
 
