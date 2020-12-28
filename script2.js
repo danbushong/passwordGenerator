@@ -80,10 +80,107 @@ function generate() {
     let specialCharacterAndUpperCase = specialCharacter.concat(upperCase);
 
     let password = ""
+    
+    if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+        for(var i = 0; i <= complexity; i++){
+            password = password + allPossible.charAt(Math.floor(Math.random() * Math.floor(allPossible.length-1)));
+        }
 
-    for(var i = 0; i <= complexity; i++){
-        password = password + lettersOnly.charAt(Math.floor(Math.random() * Math.floor(lettersOnly.length-1)));
+
     }
+    if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+        for(var i = 0; i <= complexity; i++){
+            password = password + noUpperCase.charAt(Math.floor(Math.random() * Math.floor(noUpperCase.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+        for(var i = 0; i <= complexity; i++){
+            password = password + noNumbers.charAt(Math.floor(Math.random() * Math.floor(noNumbers.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+        for(var i = 0; i <= complexity; i++){
+            password = password + noSpecial.charAt(Math.floor(Math.random() * Math.floor(noSpecial.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+        for(var i = 0; i <= complexity; i++){
+            password = password + lettersOnly.charAt(Math.floor(Math.random() * Math.floor(lettersOnly.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
+        for(var i = 0; i <= complexity; i++){
+            password = password + numbersAndSpecialCharOnly.charAt(Math.floor(Math.random() * Math.floor(numbersAndSpecialCharOnly.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+        for(var i = 0; i <= complexity; i++){
+            password = password + numbersAndLowerCase.charAt(Math.floor(Math.random() * Math.floor(numbersAndLowerCase.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
+        for(var i = 0; i <= complexity; i++){
+            password = password + numbersAndUpperCase.charAt(Math.floor(Math.random() * Math.floor(numbersAndUpperCase.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+        for(var i = 0; i <= complexity; i++){
+            password = password + specialCharacterAndLowerCase.charAt(Math.floor(Math.random() * Math.floor(specialCharacterAndLowerCase.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
+        for(var i = 0; i <= complexity; i++){
+            password = password + specialCharacterAndUpperCase.charAt(Math.floor(Math.random() * Math.floor(specialCharacterAndUpperCase.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+        for(var i = 0; i <= complexity; i++){
+            password = password + lowerCase.charAt(Math.floor(Math.random() * Math.floor(lowerCase.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
+        for(var i = 0; i <= complexity; i++){
+            password = password + upperCase.charAt(Math.floor(Math.random() * Math.floor(upperCase.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
+        for(var i = 0; i <= complexity; i++){
+            password = password + numberString.charAt(Math.floor(Math.random() * Math.floor(numberString.length-1)));
+        }
+
+
+    }
+    if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
+        for(var i = 0; i <= complexity; i++){
+            password = password + specialCharacter.charAt(Math.floor(Math.random() * Math.floor(specialCharacter.length-1)));
+        }
+
+
+    }
+
+        
 
     document.getElementById("password").value = password
 
