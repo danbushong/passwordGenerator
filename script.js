@@ -139,65 +139,75 @@ function promptMe(){
        }
        //if the user chooses everything
        if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
-        for (var z = 0 ; z < userCharacterCountChoice;z++) {
-          randomNumberInAllPossible = Math.floor(Math.random()*allPossible.length) + 1;
-
-          var a = allPossible[randomNumberInAllPossible];
-          
-          console.log(a);
-
+        for (var z = 0 ; z < userCharacterCountChoice; z++) {
+          password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
         }
 
-        if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+document.getElementById("password").value = password;
+          
+
+
+
+          
+                    
+
+          
+        
+          
+
+       }
+        
+          
+       if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberInNoUpperCase = Math.floor(Math.random()*noUpperCase.length)+ 1;
 
-            var b = noUpperCase[randomNumberInNoUpperCase]
+            var b = noUpperCase[randomNumberInNoUpperCase];
 
-            console.log(b);
+            console.log(b)
           }
-
+          
         }
 
-        if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+       if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberInNoNumbers = Math.floor(Math.random()*noNumbers.length)+ 1;
 
             var c = noNumbers[randomNumberInNoNumbers];
 
-            console.log(c);
+            
           }
 
-        }
+         }
 
-        if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+       if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberInNoSpecial = Math.floor(Math.random()*noSpecial.length)+ 1;
 
             var d = noSpecial[randomNumberInNoSpecial];
 
           }
-        }
+         }
 
-        if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+       if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberInLettersOnly = Math.floor(Math.random()*lettersOnly.length)+ 1;
 
             var e = lettersOnly[randomNumberInLettersOnly]
 
           }
-        }
+         }
 
-        if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
+       if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberInNumbersAndSpecialCharOnly = Math.floor(Math.random()*numbersAndSpecialCharOnly.length)+ 1;
 
             var f = numbersAndSpecialCharOnly[randomNumberInNumbersAndSpecialCharOnly]+ 1;
 
           }
-        }
+         }
 
-        if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+       if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberNumbersAndLowerCase = Math.floor(Math.random()*numbersAndLowerCase.length)+ 1;
 
@@ -206,7 +216,7 @@ function promptMe(){
           }
         }
 
-        if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
+       if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberNumbersAndUpperCase = Math.floor(Math.random()*numbersAndUpperCase.length)+ 1;
 
@@ -215,7 +225,7 @@ function promptMe(){
           }
         }
 
-        if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+       if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberspecialCharacterAndLowerCase = Math.floor(Math.random()*specialCharacterAndLowerCase.length)+ 1;
 
@@ -224,7 +234,7 @@ function promptMe(){
           }
         }
 
-        if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
+       if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberspecialCharacterAndUpperCase = Math.floor(Math.random()*specialCharacterAndUpperCase.length)+ 1;
 
@@ -233,7 +243,7 @@ function promptMe(){
           }
         }
 
-        if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
+       if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === true && lowerCaseLetterChoice === false){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberUpperCase = Math.floor(Math.random()*upperCase.length)+ 1;
 
@@ -242,7 +252,7 @@ function promptMe(){
           }
         }
 
-        if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
+       if (specialCharacterChoice === false && numberChoice === true && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberNumberString = Math.floor(Math.random()*numberString.length)+ 1;
 
@@ -251,7 +261,7 @@ function promptMe(){
           }
         }
 
-        if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
+       if (specialCharacterChoice === false && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === true){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberLowerCase = Math.floor(Math.random()*lowerCase.length)+ 1;
 
@@ -260,7 +270,7 @@ function promptMe(){
           }
         }
 
-        if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
+       if (specialCharacterChoice === true && numberChoice === false && upperCaseLetterChoice === false && lowerCaseLetterChoice === false){
           for (var z = 0 ; z < userCharacterCountChoice;z++){
             randomNumberSpecialCharacter = Math.floor(Math.random()*specialCharacter.length)+ 1;
 
@@ -286,33 +296,12 @@ function promptMe(){
       
 
      }
-    else {
-      alert("invalid password, make it between 8 and 128 characters");
+    
    
-    }
+     
 
-    
-  }
-  
-  
-  // if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
-    
-  //   for(i = 0; i <= userCharacterCountChoice; i++){
-
-  //     //getting a random character from allPossible
-  //     finalPassword = finalPassword + allPossible.charAt(Math.floor(Math.random()* Math.floor(allPossible.length - 1)));
-  //   }
     
    
   
-  // }
-//   function writePassword() {
-//     var password = generatePassword();
-//     var passwordText = document.querySelector("#password");
-
-//     passwordText.value = password;
-
-//   }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+  
+  
