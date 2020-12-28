@@ -3,10 +3,10 @@
 // Write password to the #password input
 function generate() {
 
-    
+    //creation of the prompts followed by alerts for fun
     let complexity = prompt("How many characters?");
 
-    if (complexity > 8 && complexity < 128){
+    if (complexity > 7 && complexity < 129){
         alert("valid password length"); 
     }
     else{
@@ -50,7 +50,8 @@ function generate() {
     else {
         alert("smart, they just make things complicated");
     }
-
+    
+    //creating arrays that can be possible combinations considering the user input in the prompts
     let lowerCase = "abcdefghijklmnopqrstuvwxyz";
 
     let upperCase= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -80,9 +81,11 @@ function generate() {
     let specialCharacterAndUpperCase = specialCharacter.concat(upperCase);
 
     let password = ""
-    
+    //all possible scenarios when user is prompted.
     if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
+        //each for loop runs the amount of times determined  by the user input on the prompt that determines complexity
         for(var i = 0; i < complexity; i++){
+            //chooses a random character from allPossible array
             password = password + allPossible.charAt(Math.floor(Math.random() * Math.floor(allPossible.length-1)));
         }
 
