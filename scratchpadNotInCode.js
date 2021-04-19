@@ -90,11 +90,11 @@ var n = specialCharacter[randomNumberSpecialCharacter];
 
 
 
-function promptMe(){
+function generate(){
 
 
   //first prompt
-  userCharacterCountChoice = prompt("How many characters?");{}
+  complexity = prompt("How many characters?");{}
 
     if (userCharacterCountChoice > 8 && userCharacterCountChoice < 128){
       alert("valid password length");
@@ -139,11 +139,15 @@ function promptMe(){
        }
        //if the user chooses everything
        if (specialCharacterChoice === true && numberChoice === true && upperCaseLetterChoice === true && lowerCaseLetterChoice === true){
-        for (var z = 0 ; z < userCharacterCountChoice; z++) {
-          password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
-        }
+        for (var z = 0 ; z < userCharacterCountChoice;z++) {
+          randomNumberInAllPossible = Math.floor(Math.random()*allPossible.length) + 1;
+          
 
-document.getElementById("password").value = password;
+       var a = allPossible[randomNumberInAllPossible];
+
+       console.log(a)
+
+          password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
           
 
 
@@ -152,7 +156,7 @@ document.getElementById("password").value = password;
                     
 
           
-        
+        }
           
 
        }
